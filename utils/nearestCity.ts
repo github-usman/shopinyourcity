@@ -1,14 +1,14 @@
 import { cityCoordinates } from "../assets/static/constants";
 
-function calculateDistance(lat1, lon1, lat2, lon2) {
-    var dx = lat2 - lat1;
-    var dy = lon2 - lon1;
+function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
+    const dx = lat2 - lat1;
+    const dy = lon2 - lon1;
     return Math.sqrt(dx * dx + dy * dy);
 }
 
-const findNearestCity = (providedLatitude, providedLongitude) => {
+const findNearestCity = (providedLatitude: number, providedLongitude: number): string | null => {
     let minDistance = Infinity;
-    let nearestCity = null;
+    let nearestCity: string | null = null;
 
     for (const [city, coords] of Object.entries(cityCoordinates)) {
         const distance = calculateDistance(providedLatitude, providedLongitude, coords.latitude, coords.longitude);
@@ -21,9 +21,7 @@ const findNearestCity = (providedLatitude, providedLongitude) => {
     return nearestCity;
 }
 
-export default findNearestCity
+export default findNearestCity;
 
 // const providedLatitude = 27.035527;
 // const providedLongitude = 82.216540;
-
-
