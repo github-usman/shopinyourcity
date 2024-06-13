@@ -5,7 +5,7 @@ import Header from "@/components/header/Header";
 
 
 export const metadata: Metadata = {
-  title: "Shop In Your City | shopinyourcity",
+  title: "Shopinyourcity Shop In Your City | no more E-commerce Website like Amazon",
   description: "Shop In Your City | shopinyourcity no more flipkart , Amazon and other E-commerce Website",
 };
 

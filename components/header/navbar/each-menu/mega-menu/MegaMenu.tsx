@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import vegetablesBucket from "../../../../../assets/media/images/navbar-menus/vegetables-bucket.png";
+import vegetablesBucket from "../../../../../assets/media/images/header/navbar-menus/vegetables-bucket.png";
 
 
 

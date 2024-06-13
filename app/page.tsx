@@ -1,10 +1,10 @@
-import FooterProductLinks from "@/components/footer/Footer";
+import SearchBox from "@/components/home/search-box/SearchBox";
 
 
 export default function Home() {
   return (
-    <main >
-      <h1>testing sidebar</h1>
+    <main className="wrapper">
+      <SearchBox/>
     </main>
   );
 }

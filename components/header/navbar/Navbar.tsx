@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [active, setActive] = useState('4')
+  const [active, setActive] = useState('')
 
   const handleActive = (id: string) => {
     setActive(id)
@@ -77,14 +77,6 @@ const Navbar = () => {
           onMouseLeave={() => handleActive('')}
         >
           For Seller <IoIosArrowDown className={"navMenuIcon"} />
-        </p>
-      </div>
-      <div className={"navMenu"}>
-      <p className={`${active === '6'?'navMenuItem navMenuItemhover':'navMenuItem'}`}
-          onMouseEnter={() => handleActive('6')}
-          onMouseLeave={() => handleActive('')}
-        >
-          Account <IoIosArrowDown className={"navMenuIcon"} />
         </p>
       </div>
     </div>
