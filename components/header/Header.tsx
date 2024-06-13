@@ -1,5 +1,5 @@
 import React from "react";
-import AllDepartments from "./all-departments-btn/AllDepartments";
+import AllDepartments from "../home/all-departments-btn/AllDepartments";
 import Navbar from "./navbar/Navbar";
 import Logo from "./logo/Logo";
 import AuthLayout from "./auth/AuthLayout";
