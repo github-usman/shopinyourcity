@@ -1,0 +1,19 @@
+.main-header{
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+    }
+   
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+
+
+@import "./header/navbar";
+@import "./header/each-menu/mega-menu";
+@import "./header/web-logo";
+}
+
+
